@@ -4,9 +4,11 @@ import HomePage from "./pages/HomePage";
 
 class App extends Component {
   render() {
-    <Switch>
-      <Route path="/" render={(props) => <HomePage {...props} />} />
-    </Switch>;
+    return (
+      <Switch>
+        <Route path="/" render={(props) => <HomePage {...props} />} />
+      </Switch>
+    );
   }
 }
 
